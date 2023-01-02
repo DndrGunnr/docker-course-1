@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 app.use(express.static('public'));
 app.get('/html', (req, res) => {
-  res.sendFile("sample_page.html", { root: __dirname });
+  res.sendFile("sample_page.html", { root: __dirname }); //test
   console.log("sample html page rendered")
 });
 
